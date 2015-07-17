@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Controller	.\Libs\PI.php	/^abstract class Controller$/;"	c
+Load	.\Libs\PI.php	/^class Load$/;"	c
+LoginController	.\Controllers\LoginController.php	/^class LoginController extends Controller $/;"	c
+PI	.\Libs\PI.php	/^class PI$/;"	c
+PI_APP_ROOT	.\index.php	/^define("PI_APP_ROOT",dirname(__FILE__).DIRECTORY_SEPARATOR);  \/\/ D:\/WAMP\/www\/rosemary\/$/;"	d
+PI_CORE_ROOT	.\index.php	/^define("PI_CORE_ROOT", PI_APP_ROOT.'Libs\/');                 \/\/ D:\/WAMP\/www\/rosemary\/Libs\/$/;"	d
+PI_DEBUG	.\index.php	/^define("PI_DEBUG", $debug);$/;"	d
+PI_DEFAULT_ACTION	.\config\config.php	/^define('PI_DEFAULT_ACTION',     'index');           \/\/ 默认方法$/;"	d
+PI_DEFAULT_ACTION	.\index.php	/^define('PI_DEFAULT_ACTION',     'index');           \/\/ 默认方法$/;"	d
+PI_DEFAULT_CONTROLLER	.\config\config.php	/^define('PI_DEFAULT_CONTROLLER', 'login');            \/\/ 默认控制器文件$/;"	d
+PI_DEFAULT_CONTROLLER	.\index.php	/^define('PI_DEFAULT_CONTROLLER', 'login');            \/\/ 默认控制器文件$/;"	d
+PI_VIEW_ROOT	.\index.php	/^define("PI_VIEW_ROOT", PI_APP_ROOT.'Views\/');                  \/\/ D:\/WAMP\/www\/rosemary\/Views\/$/;"	d
+__construct	.\Controllers\LoginController.php	/^	public function __construct()$/;"	f
+__construct	.\Libs\PI.php	/^	function __construct()$/;"	f
+action	.\Libs\PI.php	/^		$this->action = $get['a'] ? $get['a'] : PI_DEFAULT_ACTION;       \/\/获得方法名$/;"	v
+action	.\Libs\PI.php	/^	private $action;$/;"	v
+app	.\index.php	/^$app=new PI();$/;"	v
+controller	.\Libs\PI.php	/^		$this->controller = $get['c'] ? $get['c'] : PI_DEFAULT_CONTROLLER;     \/\/获得控制器名$/;"	v
+controller	.\Libs\PI.php	/^	private $controller;$/;"	v
+controller	.\Libs\PI.php	/^        $this->controller = ucfirst(preg_replace("\/[^a-z\\_1-9]\/i", "", $this->controller)).'Controller';$/;"	v
+controllerFile	.\Libs\PI.php	/^		$this->controllerFile = PI_APP_ROOT.'controllers\/'.$this->controller.'.php';$/;"	v
+controllerFile	.\Libs\PI.php	/^	private $controllerFile;$/;"	v
+data	.\Libs\PI.php	/^	static public $data = array();$/;"	v
+debug	.\Libs\PI.php	/^		$this->debug = &PI::$data['debug'];$/;"	v
+debug	.\Libs\PI.php	/^	public $debug;$/;"	v
+debug	.\index.php	/^$debug=true;$/;"	v
+field	.\Libs\PI.php	/^				return $field === '' ? self::$data[$key] : self::$data[$key][$field];$/;"	v
+field	.\Libs\PI.php	/^	public function get($key = '', $field = '')$/;"	v
+field	.\Libs\PI.php	/^	static public function get($key = '', $field = '')$/;"	v
+flag	.\Libs\PI.php	/^function magic_quotes($value, $flag = FALSE)$/;"	v
+get	.\Libs\PI.php	/^		$get = $this->get('get');$/;"	v
+get	.\Libs\PI.php	/^	public function get($key = '', $field = '')$/;"	f
+get	.\Libs\PI.php	/^	static public function get($key = '', $field = '')$/;"	f
+index	.\Controllers\LoginController.php	/^	public function index()$/;"	f
+key	.\Libs\PI.php	/^			foreach ($$datas as $key => $value)$/;"	v
+load	.\Libs\PI.php	/^		$this->load  = new Load();$/;"	v
+load	.\Libs\PI.php	/^	protected $load;$/;"	v
+magic_quotes	.\Libs\PI.php	/^function magic_quotes($value, $flag = FALSE)$/;"	f
+obj	.\Libs\PI.php	/^				$obj=$objcontroller->{$this->action}();                       \/\/调用控制器类的方法$/;"	v
+objcontroller	.\Libs\PI.php	/^			$objcontroller = new $this->controller;                            \/\/声明控制器类对象$/;"	v
+run	.\Libs\PI.php	/^	public function run()$/;"	f
+tplFile	.\Libs\PI.php	/^		$tplFile = PI_VIEW_ROOT.'tpl\/'.$tpl.'.php';$/;"	v
+view	.\Libs\PI.php	/^	public function view($tpl,$datas)$/;"	f
